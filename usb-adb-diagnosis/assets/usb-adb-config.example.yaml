@@ -1,0 +1,22 @@
+schema_version: 1
+platform: generic-linux-gadget
+host:
+  os: auto
+  connection: local
+target:
+  adb_serial: null
+  usb_vid_pid: null
+  at_port: null
+  uart_port: null
+tools:
+  adb: null
+  tshark: null
+paths:
+  source_root: null
+  evidence_dir: .codex-tmp/usb-adb
+operations:
+  mode: read-only
+collection:
+  timeout_seconds: 15
+  max_log_lines: 200
+  max_capture_mb: 32
